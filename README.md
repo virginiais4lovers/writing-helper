@@ -4,6 +4,10 @@ Claude Code skills that help you communicate more effectively using established 
 
 Two modes: **coaching** (apply a framework to your draft right now) and **practice** (learn frameworks through deliberate exercises so you can apply them yourself).
 
+### Inspired by Learning Opportunities
+
+The practice mode in this project is inspired by Dr. Cat Hicks' [Learning Opportunities](https://github.com/DrCatHicks/learning-opportunities) plugin for Claude Code. Her work applies peer-reviewed learning science to AI-assisted workflows -- showing that the conditions which make learning *slower* in the short term (prediction, generation, retrieval) produce better long-term retention and transfer. We adapted her techniques from the coding domain to written communication: the same risks she identified (fluency illusion, suppressed metacognition, blocked transfer) apply when AI rewrites your prose. If you're interested in evidence-based skill development with AI tools, start with her [plugin](https://github.com/DrCatHicks/learning-opportunities) and [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/learning-opportunities/skills/learning-opportunities/resources/PRINCIPLES.md).
+
 ## Quick Start
 
 Clone this repo and open it with [Claude Code](https://claude.ai/claude-code):

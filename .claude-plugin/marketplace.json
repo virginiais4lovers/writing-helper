@@ -1,0 +1,25 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "writing-helper",
+  "owner": {
+    "name": "Virginia Bauman"
+  },
+  "metadata": {
+    "description": "Communication framework skills for effective writing — coaching and deliberate practice",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "writing-helper",
+      "source": "./writing-helper",
+      "description": "Communication framework skills for effective writing — coaching and deliberate practice with Ladder of Inference, Pyramid Principle, SCQA, BLUF, and NVC",
+      "version": "1.0.0",
+      "author": {
+        "name": "Virginia Bauman"
+      },
+      "license": "CC-BY-4.0",
+      "keywords": ["writing", "communication", "frameworks", "coaching", "learning", "practice"],
+      "category": "education"
+    }
+  ]
+}

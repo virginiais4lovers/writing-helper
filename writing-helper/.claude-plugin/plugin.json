@@ -1,0 +1,12 @@
+{
+  "name": "writing-helper",
+  "version": "1.0.0",
+  "description": "Communication framework skills for effective writing — coaching and deliberate practice with Ladder of Inference, Pyramid Principle, SCQA, BLUF, and NVC",
+  "author": {
+    "name": "Virginia Bauman"
+  },
+  "homepage": "https://github.com/virginiais4lovers/writing-helper",
+  "repository": "https://github.com/virginiais4lovers/writing-helper",
+  "license": "CC-BY-4.0",
+  "keywords": ["writing", "communication", "frameworks", "coaching", "learning", "practice"]
+}

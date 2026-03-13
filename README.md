@@ -8,17 +8,16 @@ Two modes: **coaching** (apply a framework to your draft right now) and **practi
 
 The practice mode in this project is inspired by Dr. Cat Hicks' [Learning Opportunities](https://github.com/DrCatHicks/learning-opportunities) plugin for Claude Code. Her work applies peer-reviewed learning science to AI-assisted workflows -- showing that the conditions which make learning *slower* in the short term (prediction, generation, retrieval) produce better long-term retention and transfer. We adapted her techniques from the coding domain to written communication: the same risks she identified (fluency illusion, suppressed metacognition, blocked transfer) apply when AI rewrites your prose. If you're interested in evidence-based skill development with AI tools, start with her [plugin](https://github.com/DrCatHicks/learning-opportunities) and [PRINCIPLES.md](https://github.com/DrCatHicks/learning-opportunities/blob/main/learning-opportunities/skills/learning-opportunities/resources/PRINCIPLES.md).
 
-## Quick Start
+## Install
 
-Clone this repo and open it with [Claude Code](https://claude.ai/claude-code):
+Add the plugin marketplace, then install:
 
-```bash
-git clone https://github.com/virginiais4lovers/writing-helper.git
-cd writing-helper
-claude
+```
+/plugin add-marketplace https://github.com/virginiais4lovers/writing-helper
+/plugin install writing-helper@writing-helper
 ```
 
-The skills are automatically available as slash commands.
+The skills are automatically available as slash commands in any project.
 
 ## Coaching Skills
 
@@ -107,21 +106,26 @@ Frameworks combine well: SCQA opening + Pyramid Principle body for proposals, NV
 ## Project Structure
 
 ```
-writing-helper/
-├── .claude/skills/
-│   ├── ladder-of-inference/SKILL.md      # Coaching: reasoning transparency
-│   ├── pyramid-principle/SKILL.md        # Coaching: top-down structure
-│   ├── scqa/SKILL.md                     # Coaching: narrative framing
-│   ├── bluf/SKILL.md                     # Coaching: direct communication
-│   ├── nvc/SKILL.md                      # Coaching: difficult conversations
-│   └── writing-practice/                 # Practice: deliberate learning
-│       ├── SKILL.md
-│       └── resources/
-│           └── PRINCIPLES.md             # Learning science foundation
-├── images/                               # Mermaid-generated SVG diagrams
-├── writing-helper-spec.ipynb             # Full spec & documentation
-├── CLAUDE.md                             # Project instructions for Claude
-└── README.md                             # This file
+writing-helper/                              # Repo root (also the marketplace)
+├── .claude-plugin/
+│   └── marketplace.json                     # Marketplace catalog
+├── writing-helper/                          # The plugin
+│   ├── .claude-plugin/
+│   │   └── plugin.json                      # Plugin manifest
+│   └── skills/
+│       ├── ladder-of-inference/SKILL.md     # Coaching: reasoning transparency
+│       ├── pyramid-principle/SKILL.md       # Coaching: top-down structure
+│       ├── scqa/SKILL.md                    # Coaching: narrative framing
+│       ├── bluf/SKILL.md                    # Coaching: direct communication
+│       ├── nvc/SKILL.md                     # Coaching: difficult conversations
+│       └── writing-practice/                # Practice: deliberate learning
+│           ├── SKILL.md
+│           └── resources/
+│               └── PRINCIPLES.md            # Learning science foundation
+├── images/                                  # Mermaid-generated SVG diagrams
+├── writing-helper-spec.ipynb                # Full spec & documentation
+├── CLAUDE.md
+└── README.md
 ```
 
 ## Acknowledgments
@@ -134,7 +138,7 @@ writing-helper/
 
 ### Learning Science
 - **Dr. Cat Hicks** -- [Learning Opportunities](https://github.com/DrCatHicks/learning-opportunities) framework and the learning science principles adapted here (CC-BY-4.0)
-- The underlying research by Bjork, Dunlosky, Roediger, Karpicke, and others cited in [PRINCIPLES.md](.claude/skills/writing-practice/resources/PRINCIPLES.md)
+- The underlying research by Bjork, Dunlosky, Roediger, Karpicke, and others cited in [PRINCIPLES.md](writing-helper/skills/writing-practice/resources/PRINCIPLES.md)
 
 ## License
 

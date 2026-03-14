@@ -13,9 +13,11 @@ The practice mode in this project is inspired by Dr. Cat Hicks' [Learning Opport
 Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Run these commands inside Claude Code:
 
 ```
-/plugin add-marketplace https://github.com/virginiais4lovers/writing-helper
-/plugin install writing-helper@writing-helper
+/plugin marketplace add virginiais4lovers/writing-helper
+/plugin install writing-helper@virginiais4lovers-writing-helper
 ```
+
+Or just run `/plugin` and use the interactive Discover tab to browse and install.
 
 Once installed, the skills are available as slash commands in any project. No need to clone this repo.
 
